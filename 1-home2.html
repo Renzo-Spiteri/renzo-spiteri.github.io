@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <title>Renzo's Among Us blog</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Audiowide&family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin-left: 25%;
@@ -19,6 +22,7 @@
       font-family: Amatic SC;
       font-size: 95px;
       margin-bottom: 0px;
+      margin-top: 0px;
     }
 
     p {
@@ -28,14 +32,20 @@
     }
 
     nav {
-      background-color: #ffb700;
+      background-color: whitesmoke;
       padding: 5px;
-      padding-left: 149px;
-      padding-right: 149px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: Audiowide;
+      letter-spacing: 5px;
+      position: fixed;
+      left: 0;
+
     }
 
     main {
       background-color: lightgreen;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     article {
@@ -47,6 +57,8 @@
     cite {
       color: aqua;
       margin-left: 100px;
+      font-family: Cedarville Cursive;
+      font-size: 20px;
     }
 
     footer {
@@ -59,6 +71,8 @@
       background-color: black;
       padding-left: 5px;
       font-family: Amatic SC;
+      font-size: 40px;
+      margin-top: 0px;
     }
 
     ul {
@@ -67,13 +81,14 @@
 
     #imposter {
       color: red;
+
     }
 
     #crewmate {
       color: aqua;
     }
 
-    #hint {
+    .hint {
       color: red;
       font-family: Roboto Mono;
       font-weight: 500;
@@ -81,30 +96,41 @@
 
     img {
       margin-left: 25%;
-      width: 50% margin-bottom: 10px;
+      width: 50%;
+      margin-bottom: 10px;
     }
 
     #info {
       margin-top: 0px;
       margin-bottom: 0px;
       padding-top: 5px;
+      color: lightskyblue;
+    }
+
+    #infodetail {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 5px;
       background-color: lightskyblue;
-      color: black;
+      color: black
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Renzo's Among Us blog</h1>
+    <h1 id="top">Renzo's Among Us blog</h1>
     <nav>
       <strong>Navigation menu</strong><br>
-      <a href="#crewmate">The Crew</a> |<a href="#imposter">Imposter</a>
+      <a href="#top">Top</a><br>
+      <a href="#info">About Me</a> <br>
+      <a href="#crewmate">The Crew</a> <br>
+      <a href="#imposter">Imposter</a>
     </nav>
   </header>
-
   <main>
-    <p id="info">
+    <h2 id="info">About me</h2>
+    <p id="infodetail">
       Hi I'm Renzo and I am 8 years old.<br>
       I love playing Among Us and this is what you have to do
     </p>
@@ -115,8 +141,7 @@
         and you have to vote the imposter out<br>
         As crew you have 2 buttons: Use and Report<br>
       </p>
-
-      <p>list of easy tasks:</p>
+      <p>List of easy tasks:</p>
       <ul>
         <li>Download Data</li>
         <li>Submit Scan</li>
@@ -131,26 +156,22 @@
         you vote them out<br>
         As imposter you have 3 buttons: kill sabotage and report
       </p>
-      <p>list of easy-win sabotages:</p>
+      <p>List of easy-win sabotages:</p>
       <ul>
         <li>Fix Lights</li>
         <li>Reactor Meltdown In</li>
       </ul>
-
-      <p id="hint">
+      <p class="hint">
         Hint: When lights are down you can kill and vent with less chance that
         the crewmates see you
       </p>
-
       <img
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bB75caz5sD8Ohbbu-k98dgAAAA%26pid%3DApi&f=1" />
     </article>
   </main>
-
   <footer>
     Last update on: 28 June 2021<br>
     <cite>Renzo Spiteri</cite>
   </footer>
 </body>
-
 </html>

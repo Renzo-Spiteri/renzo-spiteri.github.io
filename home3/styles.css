@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Audiowide&family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 25%;
+  width: 50%;
+  background-color: silver;
+}
+
+h1 {
+  color: #030bfc;
+  font-family: Amatic SC;
+  font-size: 95px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p {
+  color: white;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+nav {
+  background-color: whitesmoke;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Audiowide;
+  letter-spacing: 5px;
+  position: fixed;
+  left: 0;
+
+}
+
+main {
+  background-color: lightgreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+  background-color: limegreen;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+cite {
+  color: aqua;
+  margin-left: 100px;
+  font-family: Cedarville Cursive;
+  font-size: 20px;
+}
+
+footer {
+  background-color: darkgreen;
+  padding: 20px;
+  color: white;
+}
+
+h2 {
+  background-color: black;
+  padding-left: 5px;
+  font-family: Amatic SC;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+ul {
+  color: white;
+}
+
+#imposter {
+  color: red;
+
+}
+
+#crewmate {
+  color: aqua;
+}
+
+.hint {
+  color: red;
+  font-family: Roboto Mono;
+  font-weight: 500;
+}
+
+img {
+  margin-left: 25%;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  color: lightskyblue;
+}
+
+#infodetail {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  background-color: lightskyblue;
+  color: black
+}

@@ -107,3 +107,27 @@ img {
   background-color: lightskyblue;
   color: black
 }
+.hot-news>h2{
+  color: yellow;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0.6;
+  }
+}
+
+.hot-news{
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(241,255,0,1) 100%);
+  margin: 0px;
+  height: 170px;
+}
+
+.hot-news>h2>img{
+  animation: blinker 2s linear infinite;
+  background: black;
+  height: 50px;
+  width: 50px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}

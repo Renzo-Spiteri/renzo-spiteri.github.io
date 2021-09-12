@@ -32,8 +32,10 @@ nav {
   font-family: Audiowide;
   letter-spacing: 5px;
   position: fixed;
-  left: 0;
 
+  left: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -49,15 +51,24 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
 }
 article {
   background-color: limegreen;
   margin-left: 10px;
   margin-right: 10px;
 }
+.blog-article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-text{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  
+}
 .story-element{
-  display: inline-block;
   border: #030bfc;
   border-style: solid;
   border-radius: 2px;
@@ -66,8 +77,6 @@ article {
 }
 .story-element>img{
   width: 300px;
-  margin: 10px;
-  height: 200px;  
 }
 cite {
   color: aqua;
@@ -89,9 +98,7 @@ h2 {
   font-size: 40px;
   margin-top: 0px;
 }
-.menuitem{
-  display: block;
-}
+
 ul {
   color: white;
 }
@@ -112,9 +119,9 @@ ul {
 }
 
 img {
-  margin-left: 25%;
-  width: 50%;
-  margin-bottom: 10px;
+  width: 200px;
+  margin: 10px;
+  height: 200px; 
 }
 
 #info {

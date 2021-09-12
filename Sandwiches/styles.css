@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik+Mono+One&display=swap');
+img{
+   display: block;
+   width: 100%;
+   height: auto;
+}            
+p{
+    color: black;
+    font-weight: 45px;
+    font-family: 'Comfortaa', cursive;
+}
+b,strong,h3{
+   color: red;
+   font-family: 'Rubik Mono One', sans-serif;
+}
+.color-change{
+   color: #cc040b;
+   font-family: 'Rubik Mono One', sans-serif;
+   text-align: center;
+}
+i{
+   color: red;
+}
+h1{
+   margin: 0;
+   font-weight: 79px;
+   color: white;  
+   text-align: center;
+}
+.header{
+   padding: 300px;
+   background-image: url(./images/sandwich.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.header__desc{
+   margin: auto;
+   width: fit-content;
+   padding: 10px;
+   background-color: rgba(0,0,0,0.5);
+}
+.header__text{
+   color: #fff;
+}
+header{
+   /*background: black;*/
+}
+header>img{
+    display: none;
+}
+header>p{
+    color: white;
+}
+footer{
+   color: white;
+   background-color: black;
+}
+footer>p{
+    color: white;
+    width: 320px;
+    font-size: 25px;
+}
+article{
+   padding: 200px 0;
+   background-color: white;
+}
+.split-column{
+   display: flex;
+   /* justify-content: space-between; */
+}
+.col{
+   width: 45%;
+}
+ul{
+   color: red;
+   font-weight: 100px;
+   background-image: url(./images/sandwich.png);
+}
+.fix{
+padding-bottom: 0px;
+}
+.fix2{
+padding-top: 5px;
+padding-bottom: 0px;
+}
+body{
+   margin: 0px;
+   /*background-color: #eaebef;*/
+}
+h2{
+color: aqua;
+}
+.frame {
+border: 2px solid black;
+width: 250px;
+box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+text-align: center;
+}

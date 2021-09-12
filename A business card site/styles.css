@@ -1,0 +1,15 @@
+body{
+    background-image: url(English_lessons_almere_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span{
+    color: red;
+}
+a{
+    display: block;
+}
+i{
+    font-weight: 700;
+    display: block;
+}

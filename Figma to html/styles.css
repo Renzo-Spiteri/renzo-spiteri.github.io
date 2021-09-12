@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+header {
+	position: absolute;
+	width: 118px;
+	height: 32px;
+	left: 485px;
+	top: 29px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+}
+
+h1 {
+	width: 189px;
+	height: 96px;
+	left: 463px;
+	top: 73px;
+	font-size: 64px;
+	line-height: 75px;
+}
+
+img {
+	position: absolute;
+	width: 259px;
+	height: 555px;
+	left: 84px;
+	top: -5px;
+}
+
+.about {
+	position: absolute;
+	width: 179px;
+	height: 43px;
+	left: 454px;
+	top: 201px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #000000;
+}
+
+cite {
+	position: absolute;
+	width: 280px;
+	height: 114px;
+	left: 404px;
+	top: 273px;
+	font-family: Quicksand;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #000000;
+}
+
+body {
+	position: relative;
+	width: 935px;
+	height: 549px;
+	background: #BBBBBB;
+}

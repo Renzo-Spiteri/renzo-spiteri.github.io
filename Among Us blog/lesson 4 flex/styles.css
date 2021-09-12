@@ -6,7 +6,7 @@ html {
 
 body {
   margin-left: 25%;
-  width: 50%;
+  width: 70%;
   background-color: silver;
 }
 
@@ -40,13 +40,35 @@ main {
   background-color: lightgreen;
   font-family: Arial, Helvetica, sans-serif;
 }
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 
+}
 article {
   background-color: limegreen;
   margin-left: 10px;
   margin-right: 10px;
 }
-
+.story-element{
+  display: inline-block;
+  border: #030bfc;
+  border-style: solid;
+  border-radius: 2px;
+  background-color: slategray;
+  margin: 10px;
+}
+.story-element>img{
+  width: 300px;
+  margin: 10px;
+  height: 200px;  
+}
 cite {
   color: aqua;
   margin-left: 100px;

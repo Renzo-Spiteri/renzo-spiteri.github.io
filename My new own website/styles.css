@@ -32,7 +32,18 @@ color: white;
 padding-left: 10px;
 padding-right: 10px;
 }
-
+footer{
+background-color: #459198;
+color: white;
+}
+.welcome{
+display: flex;
+flex-direction: column;
+}
+.socialmedia{
+display: flex;
+justify-content: flex-end;
+}
 .mainmenu{
 display: flex;
 justify-content: space-between;

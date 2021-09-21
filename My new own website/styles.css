@@ -14,12 +14,27 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+main{
+margin-top: 196px;
+}
 h1{
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 42px;
+}
+footer{
+background-color: #459198;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 101px;
+left: 0px;
+margin: 0px;
+position: absolute;
 }
 .mainmenulink{
 text-decoration: none;
@@ -32,24 +47,57 @@ color: white;
 padding-left: 10px;
 padding-right: 10px;
 }
-footer{
+.subheader{
+position: absolute;
+width: 95%;
+height: 62px;
+left: 0px;
+top: 134px;
+padding-left: 5%;
+margin-top: 0px;
+color: white;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
 background-color: #459198;
+}
+.footerleft{
+padding-left: 20px;
+font-size: 24px;
+}
+.footerright{
+padding-right: 10px;
+}
+.phone{
+text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
 color: white;
 }
-.welcome{
-display: flex;
-flex-direction: column;
-}
-.socialmedia{
-display: flex;
-justify-content: flex-end;
+.social{
+width: 37px;
+height: 37px;
+padding-right: 10px;
 }
 .mainmenu{
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .phoneimg{
-height: 30px;
-width: 30px;
-border-radius: 0px;    
+    height: 30px;
+    width: 30px;
+    border-radius: 0px;    
+}
+.phone:hover{
+color: yellow;
+}
+.mainmenulink:hover{
+color: yellow;
 }

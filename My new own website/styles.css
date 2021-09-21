@@ -14,6 +14,15 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+article{
+display: flex;
+justify-content:space-between;
+align-items:center;
+padding-left: 1%;
+padding-right: 1%;
+padding-top: 10px;
+margin-bottom: 20px;
+}
 main{
 margin-top: 196px;
 }
@@ -71,6 +80,19 @@ font-size: 24px;
 }
 .footerright{
 padding-right: 10px;
+display: flex;
+flex-direction: row;
+}
+.foodmenu{
+background-color: #459198;
+color: white;
+border: #127780;
+border-style: solid;
+border-width: 2px;
+border-radius: 10px;
+width: 400px;
+padding-top: 20px;
+padding-left: 20px;
 }
 .phone{
 text-decoration: none;
@@ -87,13 +109,13 @@ height: 37px;
 padding-right: 10px;
 }
 .mainmenu{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 .phoneimg{
-    height: 30px;
-    width: 30px;
-    border-radius: 0px;    
+height: 30px;
+width: 30px;
+border-radius: 0px;    
 }
 .phone:hover{
 color: yellow;

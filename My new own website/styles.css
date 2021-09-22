@@ -22,6 +22,10 @@ padding-left: 1%;
 padding-right: 1%;
 padding-top: 10px;
 margin-bottom: 20px;
+animation: fadein 2s;
+-moz-animation: fadein 2s; /* Firefox */
+-webkit-animation: fadein 2s; /* Safari and Chrome */
+-o-animation: fadein 2s; /* Opera */
 }
 main{
 margin-top: 196px;
@@ -83,9 +87,9 @@ padding-right: 10px;
 display: flex;
 flex-direction: row;
 }
-.foodmenu{
+.details{
 background-color: #459198;
-color: white;
+color: black;
 border: #127780;
 border-style: solid;
 border-width: 2px;
@@ -112,6 +116,12 @@ padding-right: 10px;
 display: flex;
 justify-content: space-between;
 }
+.details{
+background: rgba(255, 255, 255, 0.5);
+}
+.detailslist{
+text-align: left;
+}
 .phoneimg{
 height: 30px;
 width: 30px;
@@ -123,3 +133,37 @@ color: yellow;
 .mainmenulink:hover{
 color: yellow;
 }
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

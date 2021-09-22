@@ -14,25 +14,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-article{
-display: flex;
-justify-content:space-between;
-align-items:center;
-padding-left: 1%;
-padding-right: 1%;
-padding-top: 10px;
-margin-bottom: 20px;
-animation: fadein 2s;
--moz-animation: fadein 2s; /* Firefox */
--webkit-animation: fadein 2s; /* Safari and Chrome */
--o-animation: fadein 2s; /* Opera */
-}
 main{
-margin-top: 196px;
+    margin-top: 196px;
 }
 h1{
-font-family: Roboto;
-font-style: normal;
+    font-family: Roboto;
+    font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 42px;
@@ -60,8 +47,21 @@ color: white;
 padding-left: 10px;
 padding-right: 10px;
 }
+.maincontent{
+display: flex;
+justify-content:space-evenly;
+align-items:center;
+padding-left: 1%;
+padding-right: 1%;
+padding-top: 10px;
+margin-bottom: 20px;
+animation: fadein 2s;
+-moz-animation: fadein 2s; /* Firefox */
+-webkit-animation: fadein 2s; /* Safari and Chrome */
+-o-animation: fadein 2s; /* Opera */
+}
 .subheader{
-position: absolute;
+    position: absolute;
 width: 95%;
 height: 62px;
 left: 0px;
@@ -94,7 +94,7 @@ border: #127780;
 border-style: solid;
 border-width: 2px;
 border-radius: 10px;
-width: 400px;
+width: 300px;
 padding-top: 20px;
 padding-left: 20px;
 }
@@ -105,12 +105,22 @@ font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 42px;
-color: white;
+color: black;
+filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg) brightness(106%) contrast(101%);
+}
+.restaurant{
+width: 60%;
 }
 .social{
 width: 37px;
 height: 37px;
 padding-right: 10px;
+filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg) brightness(106%) contrast(101%);
+}
+.imggallery{
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
 }
 .mainmenu{
 display: flex;
@@ -128,10 +138,13 @@ width: 30px;
 border-radius: 0px;    
 }
 .phone:hover{
-color: yellow;
+filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
 .mainmenulink:hover{
 color: yellow;
+}
+.social:hover{
+filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
 
 @keyframes fadein {

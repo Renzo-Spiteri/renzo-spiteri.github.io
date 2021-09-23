@@ -121,9 +121,15 @@ filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(71deg) brightness(106%) c
 display: grid;
 grid-template-columns: auto auto auto;
 padding: 10px;
+overflow: hidden;
 }
 .imggallery>img{
 width: 90%;
+vertical-align: middle;
+transition: transform .5s ease;
+}
+.imggallery>img:hover{
+transform: scale(1.1);
 }
 .mainmenu{
 display: flex;

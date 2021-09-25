@@ -15,11 +15,11 @@ justify-content: space-between;
 align-items: center;
 }
 main{
-    margin-top: 196px;
+margin-top: 196px;
 }
 h1{
-    font-family: Roboto;
-    font-style: normal;
+font-family: Roboto;
+font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: 42px;
@@ -55,13 +55,13 @@ padding-left: 1%;
 padding-right: 1%;
 padding-top: 10px;
 margin-bottom: 20px;
-animation: fadein 2s;
--moz-animation: fadein 2s; /* Firefox */
--webkit-animation: fadein 2s; /* Safari and Chrome */
--o-animation: fadein 2s; /* Opera */
+animation: fadein 4s;
+-moz-animation: fadein 4s; /* Firefox */
+-webkit-animation: fadein 4s; /* Safari and Chrome */
+-o-animation: fadein 4s; /* Opera */
 }
 .subheader{
-    position: absolute;
+position: absolute;
 width: 95%;
 height: 62px;
 left: 0px;
@@ -77,6 +77,13 @@ line-height: 28px;
 display: flex;
 align-items: center;
 background-color: #459198;
+}
+.subheader>p{
+top: 134px;
+animation: flyright 2s ease-out;
+-moz-animation: flyright 2s ease-out; /* Firefox */
+-webkit-animation: flyright 2s ease-out; /* Safari and Chrome */
+-o-animation: flyright 2s ease-out; /* Opera */
 }
 .footerleft{
 padding-left: 20px;
@@ -122,6 +129,10 @@ display: grid;
 grid-template-columns: auto auto auto;
 padding: 10px;
 overflow: hidden;
+animation: fadein 4s;
+-moz-animation: fadein 4s; /* Firefox */
+-webkit-animation: fadein 4s; /* Safari and Chrome */
+-o-animation: fadein 4s; /* Opera */
 }
 .imggallery>img{
 width: 90%;
@@ -146,6 +157,9 @@ height: 30px;
 width: 30px;
 border-radius: 0px;    
 }
+.mailto:hover{
+color: yellow;
+}
 .phone:hover{
 filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
@@ -155,7 +169,38 @@ color: yellow;
 .social:hover{
 filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
-
+@keyframes flyright {
+    from {
+        transform: translateX(-200%) ;
+    }
+    to {
+        transform: translateX(0%) ;
+    }
+}
+@-moz-keyframes flyright { /* Firefox */
+    from {
+        transform: translateX(-200%) ;
+    }
+    to {
+        transform: translateX(0%) ;
+    }
+}
+@-webkit-keyframes flyright { /* Safari and Chrome */
+    from {
+        transform: translateX(-200%) ;
+    }
+    to {
+        transform: translateX(0%) ;
+    }
+}
+@-o-keyframes flyright { /* Opera */
+    from {
+        transform: translateX(-200%) ;
+    }
+    to {
+        transform: translateX(0%) ;
+    }
+}
 @keyframes fadein {
     from {
         opacity:0;

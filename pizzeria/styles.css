@@ -90,8 +90,11 @@ animation: flybottom 0.5s linear forwards;
 .submenu>div>div {
 background-color: rgba(0,0,0,0.5);
 padding: 5px 0px 5px 10px;
-width:390px;
+height: 90px;
+width: 390px;
 color: white;
+position: relative;
+top: 100px;
 }
 
 .menu>h2{

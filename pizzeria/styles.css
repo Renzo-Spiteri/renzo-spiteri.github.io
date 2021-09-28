@@ -65,12 +65,31 @@ animation: fadein 4s;
 overflow: hidden;
 display: grid;
 grid-template-columns: auto auto;
+width: 100%;
+}
+
+.submenu>div{
 width: 90%;
+vertical-align: middle;
+width:400px;
+height:200px;
+margin:10px;
+display: flex;
+align-items: flex-end;
+}
+
+.submenu>div>div {
+background-color: rgba(0,0,0,0.5);
+padding: 5px 0px 5px 10px;
+width:390px;
+color: white;
 }
 
 .menu>h2{
 display: block;
+border-bottom: 2px solid black ;
 }
+
 .subheader{
 position: absolute;
 width: 95%;
@@ -189,35 +208,47 @@ color: yellow;
 filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
 @keyframes flyright {
-    from {
-        transform: translateX(-200%) ;
+    0% {
+        transform: translateX(-200%) skewX(-10deg);
     }
-    to {
-        transform: translateX(0%) ;
+    75%{
+        transform: translateX(10%)  skewX(-10deg);
+    }
+    100% {
+        transform: translateX(0%)  skewX(0deg);
     }
 }
 @-moz-keyframes flyright { /* Firefox */
-    from {
-        transform: translateX(-200%) ;
+    0% {
+        transform: translateX(-200%) skewX(-10deg);
     }
-    to {
-        transform: translateX(0%) ;
+    75%{
+        transform: translateX(10%)  skewX(-10deg);
+    }
+    100% {
+        transform: translateX(0%)  skewX(0deg);
     }
 }
 @-webkit-keyframes flyright { /* Safari and Chrome */
-    from {
-        transform: translateX(-200%) ;
+    0% {
+        transform: translateX(-200%) skewX(-10deg);
     }
-    to {
-        transform: translateX(0%) ;
+    75%{
+        transform: translateX(10%)  skewX(-10deg);
+    }
+    100% {
+        transform: translateX(0%)  skewX(0deg);
     }
 }
 @-o-keyframes flyright { /* Opera */
-    from {
-        transform: translateX(-200%) ;
+    0% {
+        transform: translateX(-200%) skewX(-10deg);
     }
-    to {
-        transform: translateX(0%) ;
+    75%{
+        transform: translateX(10%)  skewX(-10deg);
+    }
+    100% {
+        transform: translateX(0%)  skewX(0deg);
     }
 }
 @keyframes fadein {

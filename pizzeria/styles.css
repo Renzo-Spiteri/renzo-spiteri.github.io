@@ -61,10 +61,15 @@ animation: fadein 4s;
 -webkit-animation: fadein 4s; /* Safari and Chrome */
 -o-animation: fadein 4s; /* Opera */
 }
-.menu{
+.submenu{
 overflow: hidden;
 display: grid;
-grid-template-columns: auto auto auto;
+grid-template-columns: auto auto;
+width: 90%;
+}
+
+.menu>h2{
+display: block;
 }
 .subheader{
 position: absolute;
@@ -110,6 +115,10 @@ border-radius: 10px;
 width: 300px;
 padding-top: 20px;
 padding-left: 20px;
+}
+.details>ul
+{
+    max-width: 250px;
 }
 .phone{
 text-decoration: none;

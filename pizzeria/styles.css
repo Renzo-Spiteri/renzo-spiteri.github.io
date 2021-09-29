@@ -80,7 +80,6 @@ overflow:hidden;
 }
 
 .submenu>div:hover>div{
-
 animation: flybottom 0.5s linear forwards;
 -moz-animation: flybottom 0.5s linear forwards; /* Firefox */
 -webkit-animation: flybottom 0.5s linear forwards; /* Safari and Chrome */
@@ -96,7 +95,11 @@ color: white;
 position: relative;
 top: 100px;
 }
-
+.fire{
+animation: blinker 2s linear infinite;
+height: 35px;
+width: 35px;
+}
 .menu>h2{
 display: block;
 border-bottom: 2px solid black ;
@@ -219,7 +222,11 @@ color: yellow;
 .social:hover{
 filter: invert(81%) sepia(97%) saturate(7495%) hue-rotate(358deg) brightness(104%) contrast(102%)
 }
-
+@keyframes blinker{
+    50%{
+      opacity: 0.6;
+    }
+  }
 @keyframes flybottom {
     0% {
         transform: translateY(0%);

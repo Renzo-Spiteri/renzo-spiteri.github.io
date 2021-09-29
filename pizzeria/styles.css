@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+scroll-behavior: smooth;
+}
 body{
 background-color: #BBCFD1;
 }
@@ -35,6 +38,30 @@ height: 101px;
 left: 0px;
 margin: 0px;
 position: absolute;
+}
+.leftmenu{
+border-style: solid;
+background-color: #459198;
+color: white;
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+font-family: Roboto;
+letter-spacing: 5px;
+position: fixed;
+left: 0;
+display: flex;
+flex-direction: column;
+}
+.leftmenu>strong{
+padding: 10px 10px 10px 10px;
+border-bottom-style: solid;
+}
+.leftmenu>a {
+padding-top: 10px;
+padding-bottom: 5px;
+text-decoration: none;
+color: white;
 }
 .mainmenulink{
 text-decoration: none;

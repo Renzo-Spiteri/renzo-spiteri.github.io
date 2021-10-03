@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&displa..');
+
+body{
+    margin: 0;
+    font-family: Open Sans;
+    color:white;
+    background-color: black;
+}
+
+h1, p{
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+main{
+    display: flex;
+}
+/* header */
+
+header{
+    padding-left: 70px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.header-inner{
+    display: flex;
+}
+
+.logoImg{
+    width: 180px;
+    height: 122px;
+    margin-right: 20px;
+}
+
+nav{
+    height: 122px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    list-style: none; /*remove list markers*/
+    padding-left: 0;
+}
+.posters{
+    background-color: black;
+    padding-top: 90px;
+}
+span{
+    color: red;
+    font-size: 28px;
+}
+h2{
+    font-size: 48px;
+    margin-left: 270px;
+    margin-bottom: 60px;
+}
+
+.postersInner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie{
+    width: 300px;
+}
+
+.poster{
+    width: 300px;
+} 
+/* footer */
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+}
+.miniLogo{
+    width: 73px;
+    height: 43px;
+    float: left;
+    margin-right: 20px;
+}
+.textFooter {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+.maintext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerP{
+    color: #504D4D;
+    font-weight: 900;
+}
+.footerA{
+    color: #504D4D;
+    font-weight: 900;
+}
+.footerA:hover{
+    animation: color 2.5s;
+    -moz-animation: color 2.5s;
+    -webkit-animation: color 2.5s;
+    -o-animation: color 2.5s;
+}
+@keyframes color {
+    from {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    to {color: #504D4D;} 
+}
+@-moz-keyframes color { /* Firefox */
+    from {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    to {color: #504D4D;} 
+}
+@-webkit-keyframes color { /* Safari and Chrome */
+    from {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    to {color: #504D4D;}
+}
+@-o-keyframes color { /* Opera */
+    from {color: red;}
+    25% {color: green;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    to {color: #504D4D;}
+}

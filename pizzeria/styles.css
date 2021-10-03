@@ -177,8 +177,7 @@ width: 300px;
 padding-top: 20px;
 padding-left: 20px;
 }
-.details>ul
-{
+.details>ul{
     max-width: 250px;
 }
 .phone{

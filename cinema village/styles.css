@@ -98,11 +98,6 @@ footer{
     flex-direction: column;
     padding-left: 80px;
 }
-.maintext{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .footerP{
     color: #504D4D;
     font-weight: 900;

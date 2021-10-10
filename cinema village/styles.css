@@ -85,6 +85,7 @@ h2{
 }
 .phone{
     border: red 1px solid;
+    padding: 2px;
 }
 /* footer */
 footer{

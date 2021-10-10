@@ -55,6 +55,9 @@ ul {
     list-style: none; /*remove list markers*/
     padding-left: 0;
 }
+li{
+    border: white 1px dotted;
+}
 .posters{
     background-color: black;
     padding-top: 90px;
@@ -78,7 +81,13 @@ h2{
     width: 300px;
     border: white 1px dotted;
 }
-
+.blackwidow{
+    background-image: url(./images/blackwidow.jpeg);
+    height: 500px;
+    width: 1250px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
 .poster{
     width: 300px;
     height: 400px;
@@ -107,6 +116,9 @@ footer{
 .footerP{
     color: #504D4D;
     font-weight: 900;
+}
+.footerP1{
+    margin-top: 5px;
 }
 .footerA{
     color: #504D4D;

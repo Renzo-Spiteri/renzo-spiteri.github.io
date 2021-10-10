@@ -76,11 +76,16 @@ h2{
 
 .movie{
     width: 300px;
+    border: white 1px dotted;
 }
 
 .poster{
     width: 300px;
-} 
+    height: 400px;
+}
+.phone{
+    border: red 1px solid;
+}
 /* footer */
 footer{
     padding-top: 50px;

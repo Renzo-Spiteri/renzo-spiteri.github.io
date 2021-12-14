@@ -48,7 +48,16 @@ nav{
     display: flex;
     align-items: center;
 }
-
+li>a:active{
+    color: red;
+}
+.premieretext::before{
+    content: url(./images/cinema.png) "\0020";
+}
+.news>input{
+    display: block;
+    margin-bottom: 5px;
+}
 ul {
     display: flex;
     justify-content: right;
@@ -62,6 +71,9 @@ li{
     background-color: black;
     padding-top: 90px;
 }
+.poster:hover{
+    transform: scale(1.6);
+}
 span{
     color: red;
     font-size: 28px;
@@ -70,6 +82,11 @@ h2{
     font-size: 48px;
     margin-left: 270px;
     margin-bottom: 60px;
+}
+
+.subscribebw{
+    background-color: red;
+    width: 250px;
 }
 
 .postersInner{
@@ -81,22 +98,26 @@ h2{
     width: 300px;
     border: white 1px dotted;
 }
-.blackwidow{
-    background-image: url(./images/blackwidow.jpeg);
-    height: 500px;
-    width: 1250px;
+.movie>input{
+    background-color: red;
+    width: 250px;
+}
+.shazam{
+    background-image: url(https://artworks.thetvdb.com/banners/v4/movie/2487/posters/6053b85132b19.jpg);
+    width: 700px;
+    height: 835px;
     background-repeat: no-repeat;
     background-color: black;
 }
 .poster{
     width: 300px;
     height: 400px;
+    transition: transform 2.5s;
 }
 .phone{
     border: red 1px solid;
     padding: 2px;
 }
-/* footer */
 footer{
     padding-top: 50px;
     padding-bottom: 50px;

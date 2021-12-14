@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luca</title>
+    <title>Night At The Museum</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js">
+    </script>
 </head>
 
 <body>
@@ -15,18 +17,22 @@
             <div class="logo">
                 <a href="./index.html"><img class="logoImg" src="./images/logo.png"></a>
             </div>
+        </div>
     </header>
     <main>
-        <img src="./images/luca.jpg" alt="Luca" class="poster">
+        <img src="https://lumiere-a.akamaihd.net/v1/images/natm_ccc6bcb4.jpeg"
+            alt="Night At The Museum" class="poster">
         <div>
-            <h2>Luca</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur, sint
-                doloribus quam
-                tempora
-                porro dicta maiores veritatis enim magnam ea libero facilis nesciunt iure non, asperiores autem
-                blanditiis
-                modi!</p>
-            </div>
+            <h2>Night At The Museum</h2>
+            <p>
+                A newly recruited night security guard at the Museum of Natural History discovers that an ancient curse
+                causes the animals and exhibits on display to come to life and wreak havoc.
+            </p>
+            <input type="button" value="Show trailer" onclick="showhidetrailer(this)">
+        </div>
+        <div id="trailer" style="display: none; z-index: 2; position: absolute; left: calc(50% - 400px); top: calc(50% - 200px);">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/YXu7kqD1JLs?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
     </main>
     <footer id="contacts">
         <div class="footerInner">

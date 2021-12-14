@@ -7,14 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Village</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function subscribe(button) {
+            if (button.value === 'Subscribe') {
+              button.value = 'Unsubscribe'  
+              button.style.backgroundColor = "green"
+            } else {
+                button.value = 'Subscribe'  
+                button.style.backgroundColor = "red"
+            }
+        }
+    </script>
 </head>
-
 <body>
     <header>
         <div class="header-inner">
             <div class="logo">
                 <a href="./index.html"><img class="logoImg" src="./images/logo.png"></a>
             </div>
+        </div>
     </header>
     <nav>
         <ul>
@@ -24,33 +35,42 @@
         </ul>
     </nav>
     <article class="posters" id="posters">
-        <div class="blackwidow">
-            <h3>Black Widow</h3>
-            <p>December 9, 2021</p>
+        <div class="shazam">
+            <h3>Shazam!</h3>
+            <p>December 1, 2022</p>
         </div>
+        <input type="button" value="Subscribe" class="subscribebw" onclick="subscribe(this)">
         <h2>Premieres</h2>
         <div class="postersInner">
             <div class="movie">
-                <a href="./soul.html">
-                    <img src="images/soul.jpeg" class="poster">
+                <a href="./percy.html">
+                    <img src="https://prodimage.images-bn.com/pimages/0024543867685_p0_v1_s550x406.jpg" class="poster">
                 </a>
-                <p>from June 19, 2021</p>
+                <p class="premieretext">from June 19, 2021</p>
+                <input type="button" value="Subscribe" onclick="subscribe(this)">
             </div>
             <div class="movie">
-                <a href="wonderwoman.html">
-                    <img src="images/ww1984jpg.jpg" class="poster">
+                <a href="museum.html">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/natm_ccc6bcb4.jpeg" class="poster">
                 </a>
-                <p>from October 1, 2021</p>
+                <p class="premieretext">from October 1, 2021</p>
+                <input type="button" value="Subscribe" onclick="subscribe(this)">
             </div>
             <div class="movie">
-                <a href="luca.html">
-                    <img src="images/luca.jpg" class="poster">
+                <a href="earth.html">
+                    <img src="https://movieposters2.com/images/723391-b.jpg" class="poster">
                 </a>
-                <p>from June 21, 2021</p>
+                <p class="premieretext">from June 21, 2021</p>
+                <input type="button" value="Subscribe" onclick="subscribe(this)">
             </div>
         </div>
     </article>
-
+    <article class="news">
+        <h3>Do you want to be aware of all the premieres?</h3>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="button" value="Subscribe">
+    </article>
     <main>
     </main>
     <footer id="contacts">

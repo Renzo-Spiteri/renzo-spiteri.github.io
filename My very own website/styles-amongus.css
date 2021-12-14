@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Audiowide&family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-left: 25%;
+  width: 70%;
+  background-color: silver;
+}
+
+h1 {
+  color: #030bfc;
+  font-family: Amatic SC;
+  font-size: 95px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+p {
+  color: white;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+nav {
+  background-color: whitesmoke;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Audiowide;
+  letter-spacing: 5px;
+  position: fixed;
+
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: lightgreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+article {
+  background-color: limegreen;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.blog-article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-text{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  
+}
+.story-element{
+  border: #030bfc;
+  border-style: solid;
+  border-radius: 2px;
+  background-color: slategray;
+  margin: 10px;
+}
+.story-element>img{
+  width: 300px;
+}
+cite {
+  color: aqua;
+  margin-left: 100px;
+  font-family: Cedarville Cursive;
+  font-size: 20px;
+}
+
+footer {
+  background-color: darkgreen;
+  padding: 20px;
+  color: white;
+}
+
+h2 {
+  background-color: black;
+  padding-left: 5px;
+  font-family: Amatic SC;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+ul {
+  color: white;
+}
+
+#imposter {
+  color: red;
+}
+
+#crewmate {
+  color: aqua;
+}
+
+.hint {
+  color: red;
+  font-family: Roboto Mono;
+  font-weight: 500;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  height: 200px; 
+}
+
+#info {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  color: lightskyblue;
+}
+
+#infodetail {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  background-color: lightskyblue;
+  color: black
+}
+.hot-news>h2{
+  color: yellow;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0.6;
+  }
+}
+
+.hot-news{
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(241,255,0,1) 100%);
+  margin: 0px;
+  height: 170px;
+}
+
+.hot-news>h2>img{
+  animation: blinker 2s linear infinite;
+  background: black;
+  height: 50px;
+  width: 50px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}

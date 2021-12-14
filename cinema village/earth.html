@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey To The Center Of The Earth</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <a href="./index.html"><img class="logoImg" src="./images/logo.png"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="https://movieposters2.com/images/723391-b.jpg" alt="Journey To The Center Of The Earth img"
+            class="poster">
+        <div>
+            <h2>Journey To The Center Of The Earth</h2>
+            <p>
+                On a quest to find out what happened to his missing brother, a scientist, his nephew and their mountain
+                guide discover a fantastic and dangerous lost world in the center of the earth.
+            </p>
+            <input type="button" value="Show trailer" onclick="showhidetrailer(this)">
+        </div>
+        <div id="trailer" style="display: none; z-index: 2; position: absolute; left: calc(50% - 400px); top: calc(50% - 200px);">
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/t8KSA-fhGBU?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+    </main>
+    <footer id="contacts">
+        <div class="footerInner">
+            <img class="miniLogo" src="images/logo.png">
+            <div class="textFooter">
+                <p class="footerP">
+                    Cinema Village
+                </p>
+                <a href="https://goo.gl/maps/wbKbz455qrA7mRYf7" target="blank">
+                    <p class="footerA">
+                        22 E 12th St, New York, NY 10003, United States
+                    </p>
+                </a>
+                <p class="footerP1">© 2020 Cinema Village ticket booking:
+                    <a href="tel:2129243364">
+                        <span class="phone">+1 212-924-3364</span>
+                </p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

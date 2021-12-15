@@ -2,6 +2,9 @@ html{
     overflow-x: hidden;
     width: 1440px;
 }
+.burgermenu{
+    display: none;   
+}
 /* .home{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -9,6 +12,88 @@ html{
     grid-row-gap: 0px;
     grid-column-gap: 0px;
 } */
+.burger_btn {
+    display: flex; /* using flex to center the contents */
+    align-items: center;  /* centering the button's contents */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+}
+#burger {
+    opacity: 0;
+}
+.burger_btn > span,
+.burger_btn > span::before,
+.burger_btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.burger_btn > span::before {
+  content: "";
+  top: -8px;
+}
+.burger_btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+}
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  .menu_box > a:hover {
+    background-color: #CFD8DC;
+  }
+  #burger:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #burger:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #burger:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #burger:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 10%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+}
 #arrow{
     position: fixed;
     right: 10%;

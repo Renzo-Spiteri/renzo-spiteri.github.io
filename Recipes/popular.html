@@ -9,9 +9,26 @@
 
 <body>
     <header style="background-color: #8888884d;">
-        <nav>
+        <div class="burgermenu">
+            <input id="burger" type="checkbox">     	                            
+            <label class="burger_btn" for="burger">
+                <span></span>
+            </label>
+            <nav class="menu__box">
+                <a href="./index.html">
+                    <h1>Recipes</h1>
+                </a>
+                <a href="./popular.html">
+                    <h2>Popular Recipes 2021</h2>
+                </a>
+                <a href="./maltese.html">
+                    <h2>Maltese Recipes</h2>
+                </a>
+            </nav>
+        </div>
+        <nav class="widemenu">
             <a href="./index.html">
-                <h1 style="text-decoration: underline;">Recipes</h1>
+                <h1>Recipes</h1>
             </a>
             <a href="./popular.html">
                 <h2 style="text-decoration: underline;">Popular Recipes 2021</h2>

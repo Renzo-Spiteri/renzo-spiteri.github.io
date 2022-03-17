@@ -1,11 +1,68 @@
 body{
     margin: 0;
 }
-
+.slider {
+    position: relative;
+    width: 312px;
+    padding: 10px 40px;
+    border: 1px solid #cccccc;
+}
+  
+  .slider img {
+    width: 312px;
+    height: 400px;
+    /* we make this element blocky to remove extra space around the pictures */
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 47%;     /* place the arrows approximately in the middle of the carousel */
+    padding: 2px;
+    font-size: 18px;
+    color: #000;
+    display: block;
+  }
+  
+  .arrow:hover {
+    background-color: orange;
+  }
+  
+  .prev {
+    left: 7px;
+  }
+  
+  .next {
+    right: 7px;
+  }
+  
+  .gallery {
+    width: 312px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 400px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 200ms;
+      /* place the arrows approximately in the middle of the carousel */
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
 .container{
     padding: 20px 50px;
     font-size: 18px;
-} 
+}
+
+#carousel{
+  padding-top:200px;
+}
 
 header {
     background-color: #FDAC53;
@@ -53,7 +110,7 @@ article>h2{
     display: flex;
     justify-content: center;
     background:-webkit-linear-gradient(45deg, white 50%,red 50%);
-     -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

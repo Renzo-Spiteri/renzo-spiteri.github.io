@@ -1,8 +1,0 @@
-basic
-<a href="mailto:renzospiteri@outlook.com">Email Us</a>
-subject
-<a href="mailto:renzospiteri@outlook.com?subject=Mail from Our Site">Email Us</a>
-CC and BCC
-<a href="mailto:renzospiteri@outlook.com?cc=renzospiteri@outlook.com, spiterirenzo@gmail.com, spiterpauline@gmail.com&bcc=nspiteri@gmail.com&subject=Big%20News">Email Us</a>
-body text
-<a href="mailto:renzospiteri@outlook.com?cc=renzospiteri@outlook.com, spiterirenzo@gmail.com, spiteripauline@gmail.com&bcc=nspiteri@gmail.com&subject=Big%20News&body=Body-goes-here">Email Us</a>

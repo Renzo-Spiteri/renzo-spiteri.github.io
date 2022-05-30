@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>yourmail.com</title>
+    <link rel="icon" href="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=">
+    <style>
+        .inputfields:focus{
+            background-color: orange;
+        }
+        .inputfields{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .inboxempty, .archiveempty , .nonedeleted{
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 500px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .inboxbutton, .archivebutton, .deletedbutton{
+            font-size: medium;
+            margin: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    </style>
+</head>
+<header>
+    <a href="./index.html">
+        <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=" alt="logo">
+    </a>
+    <input type="button" value="Sign Out" onclick="location.href= 'signout.html'">
+    <p>Logged in as example@yourmail.com</p>
+</header>
+<body>
+    <p>You have been logged in. Now you can take a look at your inbox!</p>
+    <p>Folders</p>
+    <div class="folders">
+        <div>
+            <button class="inboxbutton" onclick="change_text()">Inbox</button>
+        </div>
+        <div>
+            <button class="archivebutton" onclick="change_text()">Archive</button>
+        </div>
+        <div>
+            <button class="deletedbutton" onclick="change_text()">Deleted Items</button>
+        </div>
+    </div>
+    <div class="inboxempty">
+        <p>Inbox is empty</p>
+    </div>
+    <!--<div class="archiveempty">
+        <p>Archive is empty</p>
+    </div>
+    <div class="nonedeleted">
+        <p>Nothing deleted</p>
+    </div>-->
+</body>
+</html>

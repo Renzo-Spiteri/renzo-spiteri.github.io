@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>yourmail.com</title>
-    <link rel="icon" href="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=">
+    <link rel="icon"
+        href="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=">
     <style>
-        .inputfields:focus{
+        .inputfields:focus {
             background-color: orange;
         }
-        .inputfields{
+
+        .inputfields {
             display: block;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        header{
+
+        header {
             display: flex;
             justify-content: space-between;
         }
@@ -22,18 +27,25 @@
 </head>
 <header>
     <a href="./index.html">
-        <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=" alt="logo">
+        <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys="
+            alt="logo">
     </a>
     <div class="logsignin">
         <input type="button" value="Sign Up" onclick="location.href= 'signup.html'">
         <input type="button" value="Log In" onclick="location.href= 'login.html'">
     </div>
 </header>
+
 <body>
     <p>This is the sign up page. Make yourself an account!</p>
-    <input class="inputfields" type="text" placeholder="Type your name">
-    <input class="inputfields" type="text" placeholder="Type your surname">
-    <input class="inputfields" type="password" placeholder="Type your password">
-    <input type="button" value="Create Account" onclick="location.href='loggedin.html'">
+    <form action="loggedin.html" method="GET">
+        <input class="inputfields" type="text" name="name" placeholder="Type your name">
+        <input class="inputfields" type="text" name="surname" placeholder="Type your surname">
+        <input class="inputfields" type="password" id="password" placeholder="Type your password">
+        <!-- //add a button that opens loggedin.html passing the name and surname -->
+        <input class="inputfields" type="submit" value="Sign Up">
+        <!-- <input type="button" value="Create Account" onclick="location.href='loggedin.html'"> -->
+    </form>
 </body>
+
 </html>

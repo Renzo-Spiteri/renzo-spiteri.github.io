@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>yourmail.com</title>
-    <link rel="icon" href="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=">
+    <link rel="icon"
+        href="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=">
     <style>
-        .inputfields:focus{
+        .inputfields:focus {
             background-color: orange;
         }
-        .inputfields{
+
+        .inputfields {
             display: block;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        header{
+
+        header {
             display: flex;
             justify-content: space-between;
         }
-        .inboxempty, .archiveempty , .nonedeleted{
+
+        .inboxempty,
+        .archiveempty,
+        .nonedeleted {
             background-color: rgba(0, 0, 0, 0.4);
             height: 500px;
             width: 200px;
@@ -27,7 +35,10 @@
             justify-content: center;
             margin-top: 10px;
         }
-        .inboxbutton, .archivebutton, .deletedbutton{
+
+        .inboxbutton,
+        .archivebutton,
+        .deletedbutton {
             font-size: medium;
             margin: 10px;
             display: flex;
@@ -35,29 +46,59 @@
             align-items: center;
         }
     </style>
+
 </head>
+<script>
+    function change_text(newText)
+    {
+        var inbox = document.getElementById("inbox");
+        inbox.innerHTML = newText+ " is empty";
+        // set a random html color
+        var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        inbox.style.backgroundColor = color;
+    }
+    </script>
+
 <header>
     <a href="./index.html">
-        <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys=" alt="logo">
+        <img src="https://www.logomaker.com/api/main/images/1j+ojVVCOMkX9Wyrexe4hGfg0bPC8UYWxACeiGN9NjJE41M1xC0lg...Bp9vg4KRgWpA9SwlFaf8c7iyB4WIYUixtzrmHSZ8IeBDs9wys="
+            alt="logo">
     </a>
     <input type="button" value="Sign Out" onclick="location.href= 'signout.html'">
-    <p>Logged in as example@yourmail.com</p>
+    <p>Logged in as <span id="email">@yourmail.com</span></p>
+    <script>
+        //get the email span and change the text
+        var GET = {}
+        var queryString = window.location.search.replace(/^\?/, '').split('&');
+        for (var i = 0, max = queryString.length; i < max; i++) {
+            if (queryString[i] === "") // check for trailing & with no param
+                continue;
+
+            var param = queryString[i]
+                .split('=');
+            GET[param[0]] = param[1] || '';
+        }
+        var email = document.getElementById("email");
+        var emailText = `${GET["name"]}.${GET["surname"]}@yourmail.com`;
+        document.getElementById("email").innerHTML = emailText;
+    </script>
 </header>
+
 <body>
     <p>You have been logged in. Now you can take a look at your inbox!</p>
     <p>Folders</p>
     <div class="folders">
         <div>
-            <button class="inboxbutton" onclick="change_text()">Inbox</button>
+            <button class="inboxbutton" onclick="change_text('Inbox')">Inbox</button>
         </div>
         <div>
-            <button class="archivebutton" onclick="change_text()">Archive</button>
+            <button class="archivebutton" onclick="change_text('Archive')">Archive</button>
         </div>
         <div>
-            <button class="deletedbutton" onclick="change_text()">Deleted Items</button>
+            <button class="deletedbutton" onclick="alert('There are no deleted items')">Deleted Items</button>
         </div>
     </div>
-    <div class="inboxempty">
+    <div class="inboxempty" id="inbox">
         <p>Inbox is empty</p>
     </div>
     <!--<div class="archiveempty">
@@ -67,4 +108,5 @@
         <p>Nothing deleted</p>
     </div>-->
 </body>
+
 </html>
